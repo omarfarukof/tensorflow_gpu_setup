@@ -18,7 +18,7 @@ TensorFlow requires certain development tools and libraries to be installed on y
 
 Step 3. Setting Up a Virtual Environment using `uv`.
 
-    uv add tensorflow
+    uv add "tensorflow[and-cuda]"
     uv sync
 
 Step 4. Installing CUDA and cuDNN (for GPU Support)
@@ -35,15 +35,7 @@ Install the CUDA packages:
 
     sudo pacman -S cuda-toolkit
 
-Installing cuDNN
+Installing cuDNN:
 
-Download the cuDNN library from the NVIDIA website (registration required). [Download](https://developer.nvidia.com/cudnn-downloads)
-
-Extract the downloaded archive and copy the files to the CUDA directory:
-
-```sh
-sudo cp -P cuda/include/cudnn*.h /opt/cuda/include
-sudo cp -P cuda/lib64/libcudnn* /opt/cuda/lib64
-sudo chmod a+r /opt/cuda/include/cudnn*.h /opt/cuda/lib64/libcudnn*
-```
+    sudo pacman -S cudnn
 
