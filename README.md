@@ -37,7 +37,7 @@ Install the CUDA packages:
 
 Installing cuDNN
 
-Download the cuDNN library from the NVIDIA website (registration required).
+Download the cuDNN library from the NVIDIA website (registration required). [Download](https://developer.nvidia.com/cudnn-downloads)
 
 Extract the downloaded archive and copy the files to the CUDA directory:
 
