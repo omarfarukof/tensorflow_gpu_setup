@@ -1,4 +1,4 @@
-# tensorflow_gpu_setup
+# Tensorflow GPU Setup
 
 ## Install TensorFlow on Manjaro
 
