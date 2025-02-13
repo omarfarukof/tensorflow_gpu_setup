@@ -8,34 +8,34 @@ Before installing any new software, it’s a good practice to update your packag
 
 To update the package database, run the following command in the terminal:
 
-`sudo pacman -Syu`
+    sudo pacman -Syu
 
 Step 2. Installing Necessary Development Tools.
 
 TensorFlow requires certain development tools and libraries to be installed on your system. Install the GCC compiler and Python packages by running:
 
-`sudo pacman -S base-devel python python-pip`
+    sudo pacman -S base-devel python python-pip
 
 Step 3. Setting Up a Virtual Environment using `uv`.
 
-`uv add tensorflow`
-`uv sync`
+    uv add tensorflow
+    uv sync
 
 Step 4. Installing CUDA and cuDNN (for GPU Support)
 
 If you have a compatible NVIDIA GPU and want to leverage its power for accelerated TensorFlow computations, you need to install CUDA and cuDNN.
 
-    Installing CUDA Toolkit
+Installing CUDA Toolkit
 
 First, add the CUDA repository to your system:
 
-`sudo pacman -S cuda`
+    sudo pacman -S cuda
 
 Install the CUDA packages:
 
-`sudo pacman -S cuda-toolkit`
+    sudo pacman -S cuda-toolkit
 
-    Installing cuDNN
+Installing cuDNN
 
 Download the cuDNN library from the NVIDIA website (registration required).
 
